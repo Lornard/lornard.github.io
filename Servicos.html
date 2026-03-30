@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <script src="js\servicos.js"></script>
     <style>
         div{
             margin-right: 40px; 
@@ -32,8 +33,8 @@
                     <p>Banho</p>
                     <p>R$ 110,00</p>
                     <br/>
-                    <p><input type="date" id="dateAgendamento"></input></p>
-                    <p><input type="button" onclick="">Agendar</input></p>
+                    <p><input type="date" id="dateAgendamentoBanho"></input></p>
+                    <p><input type="button" onclick="confirmarAgendamento(document.getElementById('dateAgendamentoBanho'))">Agendar</input></p>
                 </div>
             </td>
             <td style="margin-right: 10px;">
