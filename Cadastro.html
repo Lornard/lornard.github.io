@@ -20,39 +20,59 @@
     <form action="https://formsubmit.co/silveira.gabriel9001@edu.pucrs.br" method="POST">
         <fieldset>
             <legend>Tutor</legend>
-            <label for="txtNome">Nome: </label>
-            <input type="text" id="txtNome" placeholder="João da Silva"/>
-            <br/>
-            <label for="txtEndereco">Endereço: </label>
-            <input type="text" id="txtEndereco" placeholder="Rua Ataliba, 238" />
-            <br/>
-            <label for="numCPF">CPF: </label>
-            <input type="number" id="numCPF" placeholder="01234567890" />
-            <br/>
-            <fieldset>
-                <legend>Sexo:</legend>
-                <input type="radio" name="sexo" id="rdMasculino" value="Masculino">Masculino</input>
-                <input type="radio" name="sexo" id="rdFeminino" value="Feminino">Feminino</input>
-            </fieldset>
-            <br/>
-            <label for="numTelefone">Telefone: </label>
-            <input type="tel" id="numTelefone" placeholder="999999999" />
-            <br/>
-            <label for="txtEmail">E-mail</label>
-            <input type="email" id="txtEmail" placeholder="pet@shop.com" />
-            <br/>
+            <div class="container-fluid">
+                <div class="col-sm-3">
+                    <label for="txtNome">Nome: </label>
+                    <br/>
+                    <label for="txtEndereco">Endereço: </label>
+                    <br/>
+                    <label for="numCPF">CPF: </label>
+                    <br/>
+                    <label for="sexo">Sexo:</legend>
+                    <br/>
+                    <label for="numTelefone">Telefone: </label>
+                    <br/>
+                    <label for="txtEmail">E-mail</label>
+                    <br/>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" id="txtNome" placeholder="João da Silva" required/>
+                    <br/>
+                    <input type="text" id="txtEndereco" placeholder="Rua Ataliba, 238" required/>
+                    <br/>
+                    <input type="number" id="numCPF" placeholder="01234567890" required/>
+                    <br/>
+                    <fieldset>
+                        <input type="radio" name="sexo" id="rdMasculino" value="Masculino" checked>Masculino</input>
+                        <input type="radio" name="sexo" id="rdFeminino" value="Feminino">Feminino</input>
+                    </fieldset>
+                    <br/>
+                    <input type="tel" id="numTelefone" placeholder="999999999" />
+                    <br/>
+                    <input type="email" id="txtEmail" placeholder="pet@shop.com" />
+                </div>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Pet</legend>
-            <label for="txtNomePet">Nome do Pet: </label>
-            <input type="text" id="txtNomePet" placeholder="Toto" />
-            <br/>
-            <label for="txtRaca">Raça:</label>
-            <input type="text" id="txtRaca" placeholder="SRD" />
-            <br/>
-            <label for="numIdade">Idade: </label>
-            <input type="number" id="numIdade" placeholder="2" />
+            <div class="container-fluid">
+                <div class="col-sm-3">
+                    <label for="txtNomePet">Nome do Pet: </label>
+                    <br/>
+                    <label for="txtRaca">Raça:</label>
+                    <br/>
+                    <label for="numIdade">Idade: </label>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" id="txtNomePet" placeholder="Toto" required/>
+                    <br/>
+                    <input type="text" id="txtRaca" placeholder="SRD" required/>
+                    <br/>
+                    <input type="number" id="numIdade" placeholder="2" required/>
+                </div>
+            </div>
         </fieldset>
+
         <button type="submit">Enviar</button>
     </form>
 </body>
